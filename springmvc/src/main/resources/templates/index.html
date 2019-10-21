@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title> My first App</title>
+</head>
+
+<body>
+<form action="save" method="post">
+    <table>
+        <tr>
+            <td>
+                <label for ="name" >Name :</label>
+            </td>
+            <td>
+                <input type="text" name="name" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for ="mail" >Email: </label>
+            </td>
+            <td>
+                <input type="text" name="mail" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value ="submit" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<a th:href="@{/add}">hello</a>
+
+</body>
+
+</html>
